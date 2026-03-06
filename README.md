@@ -36,4 +36,5 @@ Edit `config.yml` to change messages and MOTD.
 ## Download
 
 [Github](https://github.com/Takkunlego0916/Maintenance/releases/latest)
+
 [Modrinth](https://modrinth.com/plugin/maintenance-plugin)
