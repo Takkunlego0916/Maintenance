@@ -1,0 +1,11 @@
+maintenance: false
+
+default-language: "en_us"
+
+motd:
+
+  line1: "&aExample Server"
+
+  line2: "&7Survival Server"
+
+  maintenance-line2: "&cServer under maintenance"

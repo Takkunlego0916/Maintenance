@@ -1,0 +1,8 @@
+name: Maintenance
+version: 1.0
+main: io.github.takkunlego0916.maintenance.Maintenance
+api-version: 1.21
+
+commands:
+  maintenance:
+    permission: maintenance.admin
