@@ -22,7 +22,6 @@ Maintenance mode plugin for Minecraft servers.
 | Permission | Description |
 |-----------|-------------|
 | maintenance.admin | Use maintenance commands |
-| maintenance.bypass | Join during maintenance |
 
 ## Configuration
 
