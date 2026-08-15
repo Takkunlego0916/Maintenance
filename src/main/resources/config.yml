@@ -1,11 +1,26 @@
-maintenance: false
+maintenance:
+  enabled: false
+  reason: ""
+  scheduled-end: 0
 
 default-language: "en_us"
 
 motd:
+  normal:
+    line1: "&aExample Server"
+    line2: "&7Survival &8| &f%online%&7/&f%max% &7online"
+  maintenance:
+    line1: "&aExample Server"
+    line2: "&cUnder maintenance - back soon!"
+  hide-player-count: true
+  version-text: "&c⚠ &4Maintenance"
 
-  line1: "&aExample Server"
+broadcast:
+  on-enable: true
+  on-disable: true
+  countdown-warnings: true
 
-  line2: "&7Survival Server"
-
-  maintenance-line2: "&cServer under maintenance"
+update-checker:
+  enabled: true
+  modrinth-id: "maintenance-plugin"
+  notify-ops-on-join: true
