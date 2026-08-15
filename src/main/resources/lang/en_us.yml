@@ -1,3 +1,35 @@
 maintenance:
+  kick:
+    default: "&c&lMaintenance&r&c mode is currently active.\n&7Please check back later."
+    reason: "&c&lMaintenance&r&c mode is currently active.\n&7Reason: &f%reason%\n&7Please check back later."
+  countdown: "&8[&bMaintenance&8] &7Server will enter maintenance in &f%time%&7."
 
-  kick: "&cServer is currently under maintenance"
+command:
+  no-permission: "&cYou do not have permission to use this command."
+  unknown-subcommand: "&cUnknown subcommand. Use &f/maintenance help&c for a list of commands."
+  already-enabled: "&eMaintenance mode is already enabled."
+  already-disabled: "&eMaintenance mode is already disabled."
+  enabled:
+    console: "&aMaintenance mode has been enabled."
+    broadcast: "&8[&bMaintenance&8] &c&lThe server is entering maintenance mode."
+    broadcast-reason: "&8[&bMaintenance&8] &7Reason: &f%reason%"
+    broadcast-scheduled: "&8[&bMaintenance&8] &7Estimated duration: &f%duration%"
+  disabled:
+    console: "&aMaintenance mode has been disabled."
+    broadcast: "&8[&bMaintenance&8] &a&lThe server is now open to everyone again!"
+  status:
+    enabled: "&8[&bMaintenance&8] &cMaintenance mode is currently &lENABLED&r&c."
+    disabled: "&8[&bMaintenance&8] &aMaintenance mode is currently &lDISABLED&r&a."
+    reason: "&7Reason: &f%reason%"
+    time-left: "&7Time remaining: &f%time%"
+  reload: "&aConfiguration and language files have been reloaded."
+  help:
+    header: "&8&m----------&r &b&lMaintenance&r &8&m----------"
+    on: "&f/maintenance on [duration] [reason] &7- Enable maintenance mode"
+    off: "&f/maintenance off &7- Disable maintenance mode"
+    status: "&f/maintenance status &7- Show the current status"
+    reload: "&f/maintenance reload &7- Reload the configuration"
+    help: "&f/maintenance help &7- Show this message"
+
+update:
+  available: "&8[&bMaintenance&8] &eA new version is available: &f%version%&e. Update at modrinth.com!"
