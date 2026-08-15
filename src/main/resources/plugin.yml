@@ -1,8 +1,23 @@
 name: Maintenance
-version: 1.0
+version: ${project.version}
 main: io.github.takkunlego0916.maintenance.Maintenance
 api-version: 1.21
+author: takkunlego0916
+description: A modern maintenance mode plugin with scheduled downtime, bypass permissions, hex-color messages and full localization.
+website: https://modrinth.com/plugin/maintenance-plugin
 
 commands:
   maintenance:
+    description: Manage the server's maintenance mode.
+    usage: /<command> <on|off|status|reload|help> [duration] [reason]
     permission: maintenance.admin
+
+permissions:
+  maintenance.admin:
+    description: Allows management of maintenance mode.
+    default: op
+    children:
+      maintenance.bypass: true
+  maintenance.bypass:
+    description: Allows joining the server while maintenance mode is enabled.
+    default: op
