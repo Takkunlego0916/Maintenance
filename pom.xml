@@ -7,13 +7,12 @@
 
     <groupId>io.github.takkunlego0916</groupId>
     <artifactId>Maintenance</artifactId>
-    <version>1.0</version>
+    <version>2.0.0</version>
     <packaging>jar</packaging>
 
     <name>Maintenance</name>
-    <description>Minecraft Maintenance Mode Plugin</description>
+    <description>A modern, lightweight maintenance mode plugin for Paper servers.</description>
 
-    <!-- Java & Encoding -->
     <properties>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,7 +20,6 @@
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
-    <!-- Paper repository -->
     <repositories>
         <repository>
             <id>papermc</id>
@@ -29,24 +27,33 @@
         </repository>
     </repositories>
 
-    <!-- Dependencies -->
     <dependencies>
-
-        <!-- Paper API -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.21.1-R0.1-SNAPSHOT</version>
+            <version>1.21.11-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 
-    <!-- Build -->
     <build>
-        <plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
 
-            <!-- Java compiler -->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -58,7 +65,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Jar plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -71,7 +77,6 @@
                     </archive>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 
