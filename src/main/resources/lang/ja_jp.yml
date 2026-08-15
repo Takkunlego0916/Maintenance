@@ -1,3 +1,35 @@
 maintenance:
+  kick:
+    default: "&c&lメンテナンス&r&c中です。\n&7しばらくしてから再度お試しください。"
+    reason: "&c&lメンテナンス&r&c中です。\n&7理由: &f%reason%\n&7しばらくしてから再度お試しください。"
+  countdown: "&8[&bMaintenance&8] &7あと&f%time%&7でメンテナンスに入ります。"
 
-  kick: "&c現在サーバーはメンテナンス中です"
+command:
+  no-permission: "&cこのコマンドを使用する権限がありません。"
+  unknown-subcommand: "&c不明なサブコマンドです。&f/maintenance help&cでコマンド一覧を確認してください。"
+  already-enabled: "&eメンテナンスモードは既に有効です。"
+  already-disabled: "&eメンテナンスモードは既に無効です。"
+  enabled:
+    console: "&aメンテナンスモードを有効にしました。"
+    broadcast: "&8[&bMaintenance&8] &c&lまもなくメンテナンスに入ります。"
+    broadcast-reason: "&8[&bMaintenance&8] &7理由: &f%reason%"
+    broadcast-scheduled: "&8[&bMaintenance&8] &7予定時間: &f%duration%"
+  disabled:
+    console: "&aメンテナンスモードを無効にしました。"
+    broadcast: "&8[&bMaintenance&8] &a&lメンテナンスが終了しました！"
+  status:
+    enabled: "&8[&bMaintenance&8] &cメンテナンスモードは現在&l有効&r&cです。"
+    disabled: "&8[&bMaintenance&8] &aメンテナンスモードは現在&l無効&r&aです。"
+    reason: "&7理由: &f%reason%"
+    time-left: "&7残り時間: &f%time%"
+  reload: "&a設定ファイルと言語ファイルを再読み込みしました。"
+  help:
+    header: "&8&m----------&r &b&lMaintenance&r &8&m----------"
+    on: "&f/maintenance on [時間] [理由] &7- メンテナンスモードを有効化"
+    off: "&f/maintenance off &7- メンテナンスモードを無効化"
+    status: "&f/maintenance status &7- 現在の状態を表示"
+    reload: "&f/maintenance reload &7- 設定を再読み込み"
+    help: "&f/maintenance help &7- このメッセージを表示"
+
+update:
+  available: "&8[&bMaintenance&8] &e新しいバージョンが利用可能です: &f%version%&e。Modrinthで確認してください。"
